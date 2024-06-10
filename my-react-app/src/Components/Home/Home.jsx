@@ -1,6 +1,11 @@
 import React from 'react'
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";
+import { TfiFacebook } from "react-icons/tfi";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaTripadvisor } from "react-icons/fa";
+import { CiCircleList } from "react-icons/ci";
+import { TbApps } from "react-icons/tb";
 
 import './home.css'
 import video from '../../Assets/Video.mp4'
@@ -56,7 +61,19 @@ const Home = () => {
           </div>
       </div>
 
-      .homeFooterIcons
+      <div className='homeFooterIcons flex' >
+        <div className='rightIcons'>
+        <TfiFacebook className='icon'/>
+        <IoLogoInstagram className='icon'/>
+        <FaTripadvisor className='icon'/>
+  
+
+        </div>
+        <div className='leftIcons'>
+        <CiCircleList className='icon'/>
+        <TbApps  className='icon'/>
+        </div>
+      </div>
       </div>
     </section>
 
