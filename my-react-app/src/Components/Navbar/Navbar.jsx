@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.css'
 import { MdTravelExplore } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Navbar = () => {
+  const [active, setActive] = useState('navBar')
+    //function to toggle
+    const showNav = ()=>{
+      setActive('navBar activeNavbar')
+    }
+    const removeNav = ()=>{
+      setActive('navBar')
+    }
+
   return (
     <section className='navBarSection'>
       <header className='header flex'>
@@ -14,7 +23,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="navBar"> 
+        <div className={active}> 
           <ul className="navLists flex">
             
             <li className="navItem">
@@ -41,14 +50,17 @@ const Navbar = () => {
             </button>
           </ul>
 
-          <div className="closeNavbar">
+          <div onClick={removeNav} 
+          className="closeNavbar">
           <IoMdCloseCircle className='icon'/>
           </div>
 
-          <div className="toggleNavbar">
+        </div>
+
+          <div onClick={showNav}
+          className="toggleNavbar">
           <BsThreeDotsVertical className="icon" />
           </div>
-        </div>
       </header>
     </section>
 
