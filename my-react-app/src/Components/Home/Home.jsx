@@ -25,7 +25,6 @@ const Home = () => {
           <h1 className='homeTitle'>
             Search your Holiday
           </h1>
-
         </div>
 
         <div className='cardDiv grid'>
@@ -41,7 +40,6 @@ const Home = () => {
             <label htmlFor ="date">Select your date:</label>
             <div className='input flex'>
               <input type ="date"/>
-              <GrLocation className="icon" />
             </div>
           </div>
           <div className='priceInput'>
@@ -49,15 +47,15 @@ const Home = () => {
               <label htmlFor='price'>Max Price</label>
               <h3 className='total'> $5000</h3>
             </div>
+
             <div className='input flex'>
               <input type ="range" max = "5000" min ="100"/>
             </div>
           </div>
-          <div className='searchOptions flex'>
+
+          <div className="searchOptions flex">
           <HiFilter className='icon'/>
           <span>MORE FILTERS</span>
-
-
           </div>
       </div>
 

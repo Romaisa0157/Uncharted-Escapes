@@ -3,12 +3,12 @@
     --SecondaryColor: hsl(387, 85%, 43%);
     --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%)); /* second color unclear */
     --whiteColor: hsl(0,0%,100%);
-    --blackColor: hsl(101,33%,16%); 
+    --blackColor: hsl(227, 50%, 58%); 
     --textColor: hsl(0, 0%, 0%);
     --whiteColorDeam: hsl(0,0%,93%);
     --greyText: rgb(190,190,190);  
     --inputColor: rgb(239,239,239);
-    --bodyColor: rgb(240,240,246);
+    --bodyColor: rgb(61, 61, 61);
     --cardBG: rgb(255,255,255);
 }
 
@@ -50,10 +50,12 @@
           align-items: stretch;
           justify-content: center;    
           margin: auto;
-          color: var(--whiteColor);
+          color: rgb(160, 160, 160);
           z-index: 100;
-    .textDiv{
+    
+          .textDiv{
         padding: 2rem 0;
+        color: var(--whiteColor); 
 
         .smallText{
             font-size: 13px;
@@ -72,7 +74,7 @@
         background: var(--whiteColor);
         border-radius: 18px;
         gap: 1rem;
-      }
+      
       
       .label {
         display: block;
@@ -116,6 +118,7 @@
           .input[type=range]{
             background: blue;
           } 
+        }
 
           .searchOptions{
             position: absolute;
@@ -129,6 +132,7 @@
             transform: translate(-50%);
             justify-content: center;
             cursor: pointer;
+            color: var(--whiteColor);
             
             &:hover{
                 background: var(--PrimaryColor);
@@ -143,5 +147,22 @@
             }
 
         }
+      } 
+
+      .homeFooterIcons{
+        width: 100%;
+        justify-content: space-between;
+
+        .icon{
+          font-size: 20px;
+          margin: 0 5px;
+          color: var(--whiteColor);
+          font-weight: 600;
+          &:hover{
+            color: var(--PrimaryColor);
+          }
+        }
       }
-}
+} 
+
+//Media Queries
