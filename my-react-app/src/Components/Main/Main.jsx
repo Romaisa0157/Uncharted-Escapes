@@ -1,16 +1,20 @@
 import React from 'react'
 import './main.css'
+import { CiLocationOn } from "react-icons/ci";
+import { LuClipboardSignature } from "react-icons/lu";
+
+
 import img1 from '../../Assets/imgs/img(1).jpg'
 // import img2 from '../../Assets/imgs/img(2).jpg'
 // import img3 from '../../Assets/imgs/img(3).jpg'
 // import img4 from '../../Assets/imgs/img(4).jpg'
 // import img5 from '../../Assets/imgs/img(5).jpg'
 // import img6 from '../../Assets/imgs/img(6).jpg'
-// import img7 from '../../Assets/imgs/img(7).jpg'
+// import img7  from '../../Assets/imgs/img(7).jpg'
 // import img8 from '../../Assets/imgs/img(8).jpg'
 // import img9 from '../../Assets/imgs/img(9).jpg'
 
- 
+
 const Data = [
   {
     id: 1,
@@ -31,7 +35,7 @@ const Data = [
   //   fees: '$600',
   //   description: 'Nestled high in the Andes Mountains, Machu Picchu is an ancient Incan city surrounded by lush greenery. Its archaeological significance and panoramic views attract visitors from all over the world.',
   // },
-  
+
   // {
   //   id: 3,
   //   imgSrc: img3,
@@ -41,7 +45,7 @@ const Data = [
   //   fees: '$700',
   //   description: 'The Great Barrier Reef is a paradise for divers and snorkelers. With its vibrant coral reefs and diverse marine life, it’s a spectacular natural wonder that promises an unforgettable experience.',
   // },
-  
+
   // {
   //   id: 4,
   //   imgSrc: img4,
@@ -61,7 +65,7 @@ const Data = [
   //   fees: '$400',
   //   description: 'Banff National Park, located in the heart of the Canadian Rockies, is known for its stunning landscapes, including turquoise lakes, majestic mountains, and abundant wildlife. It’s a haven for outdoor enthusiasts.',
   // },
-  
+
   // {
   //   id: 6,
   //   imgSrc: img6,
@@ -71,7 +75,7 @@ const Data = [
   //   fees: '$650',
   //   description: 'Kyoto, once the capital of Japan, is known for its classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines, and traditional wooden houses. It’s a city where ancient traditions meet modern life.',
   // },
-  
+
   // {
   //   id: 7,
   //   imgSrc: img7,
@@ -91,7 +95,7 @@ const Data = [
   //   fees: '$750',
   //   description: 'Paris, the city of love, is known for its art, fashion, and culture. Visitors can explore historic landmarks like the Eiffel Tower and Louvre Museum, stroll along the Seine, and enjoy exquisite cuisine.',
   // },
-  
+
   // {
   //   id: 9,
   //   imgSrc: img9,
@@ -106,7 +110,7 @@ const Data = [
 
 const Main = () => {
   return (
-    <section className='main container section'>
+    <section className="main container section">
 
       <div className='secTitle'>
         <h3 className='title'>
@@ -114,31 +118,51 @@ const Main = () => {
         </h3>
       </div>
 
-    <div className='secContent grid'>
-    {
-      Data.map(({id,imgSrc,destTitle,location,grade,fees,description}) =>{
-        return(
-          <div key = {id}
-           className= 'singleDestinations'>
-           {
+      <div className='secContent grid'>
+        {
+          Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => {
+            return (
+              <div key={id}
+                className='singleDestinations'>
+                {
 
-           }
-           <div className='imageDiv'>
-            <img src={imgSrc} alt={destTitle}/>
-            </div>
+                }
+                <div className='imageDiv'>
+                  <img src={imgSrc} alt={destTitle} />
+                </div>
 
-            <div className='cardInfo'>
-              <h4 className='destTitle'>{destTitle}</h4>
-            </div>
+                <div className='cardInfo'>
+                  <h4 className='destTitle'>{destTitle}</h4>
+                  <span className='continent flex'>
+                    <CiLocationOn className='icon' />
+                    <span className='name'>{location}</span>
+                  </span>
 
-            </div>
-        )
-            
-      })
-    }
+                  <div className='fees flex'>
+                    <div className='grade'>
+                      <span>{grade}<small>+1</small></span>
+                    </div>
+                    <div className='price'>
+                      <h5>{fees}</h5>
+                    </div>
+
+                    <div className='desc'>
+                      <p>{description}</p>
+                    </div>
+                    <button className='btn flex'>
+                      DETAILS
+                      <LuClipboardSignature className='icon' />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )
+
+          })
+        }
 
 
-    </div>
+      </div>
     </section>
   )
 }
