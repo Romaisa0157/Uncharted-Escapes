@@ -91,4 +91,14 @@
 .footer .contactDiv .inputDiv input::placeholder {
   color: var(--whiteColor);
   opacity: 0.5;
+}
+.footer .contactDiv .inputDiv .btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.footer .contactDiv .inputDiv .btn .icon {
+  font-size: 10px;
 }/*# sourceMappingURL=footer.css.map */

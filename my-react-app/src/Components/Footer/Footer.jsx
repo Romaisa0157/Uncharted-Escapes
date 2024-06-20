@@ -2,6 +2,10 @@ import React from 'react'
 import './footer.css'
 import video2 from '../../Assets/Video.mp4'
 import { FiSend } from 'react-icons/fi'
+import { MdOutlineTravelExplore } from "react-icons/md";
+import { AiFillInstagram, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
+import { FaTripadvisor } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -25,7 +29,28 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <div className='footerCard flex'>
+          <div className='footerIntro flex'>
+            <div className='logoDiv'>
+              <a href="https://www.google.com" className='logo flex'>
+                <MdOutlineTravelExplore className='icon' /> Travel.
+              </a>
+            </div>
 
+            <div className='footerParagraphg'>
+              Travel with us and explore the world in a unique way. We offer personalized travel
+            </div>
+
+            <div className='footerSocials'>
+              <AiOutlineTwitter className='icon' />
+              <AiFillYoutube className='icon' />
+              <AiFillInstagram className='icon' />
+              <FaTripadvisor className='icon' />
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </section >
 
