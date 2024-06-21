@@ -13,30 +13,32 @@
 }
 
 .header{
-    position:fixed;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: transparent !important;
     width: 100%;
     padding: 2rem;
     z-index: 1000;
-    margin-top: -10px;
+    margin-top: 10px;
+    text-decoration: none;
 
 
-
-    .navLists{
-        .navItem{
-            color: var(--textColor);
-            padding: 10px;
+    .navLists {
+        .navItem {
+          .navLink {
+            color: var(--blackColor);
+            padding: 15px;
             font-size: 0.9rem;
             font-weight: 500;
-
-            &:hover{
-                color: var(--PrimaryColor);
+    
+            &:hover {
+              color: var(--SecondaryColor);
             }
+          }
         }
-    }
+      }
 
     .logo{
         color: var(--blackColor);
@@ -44,13 +46,18 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
+        &:hover{
+            color: var(--SecondaryColor);
+        }
 
     }
     .icon{
         font-size: 25px;
-        color: var(--PrimaryColor);
+        color: var(--blackColor);
         transform: translate(5px);
-
+        &:hover{
+            color: var(--SecondaryColor);
+        }
     }
 
 
@@ -85,22 +92,31 @@
                         font-size: 1rem;
                         font-weight: 400;
                         &:hover{
-                            color: var(--PrimaryColor);
+                            color: var(--SecondaryColor);
                         }
 
                     }
-                   
                 }
             
 
-                .btn{
+                .btn {
                     margin-top: 1rem;
-
-                    a{
-                        font-weight:  600;
-                        color: var(--whiteColor);
+                    padding: 0.5rem 1rem;
+                    background-color: var(--PrimaryColor);
+                    border: none;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+          
+                    a {
+                      font-weight: 600;
+                      color: var(--whiteColor);
+                      text-decoration: none;
                     }
-                }
+          
+                    &:hover {
+                      background-color: var(--SecondaryColor);
+                    }
+                  }
             }
             .closeNavbar{
                 position: absolute;
@@ -126,13 +142,13 @@
 
         }
 
-        &:hover.icon{
+        &:hover{
             color:  var(--SecondaryColor);
         }
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 840px) {
     .toggleNavbar,
     .closeNavbar {
       display: none;
@@ -156,18 +172,27 @@
             font-size: 0.9rem;
             font-weight: 500;
 
-            &:hover{
-                color: var(--PrimaryColor);
-            }
+        
         }
     }
-.btn{
-    margin-left: 1rem;
-    a{
-        color: var(--whiteColor);
-        font-weight: 500;
-    }
-}
+    .btn {
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--PrimaryColor);
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+  
+        a {
+          color: var(--whiteColor);
+          font-weight: 500;
+          text-decoration: none;
+        }
+  
+        &:hover {
+          background-color: var(--SecondaryColor);
+        }
+      }
   }
 }
 

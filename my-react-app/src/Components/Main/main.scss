@@ -1,12 +1,12 @@
 :root {
-    --PrimaryColor: hsl(199, 100%, 33%);
-    --SecondaryColor: hsl(387, 85%, 43%);
-    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --PrimaryColor: #104c64;
+    --SecondaryColor: #e24400;
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 32%));
     /* second color unclear */
     --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(227, 50%, 58%);
+    --blackColor: #0d1d25;
     --textColor: hsl(0, 0%, 0%);
-    --whiteColorDeam: hsl(0, 0%, 93%);
+    --whiteColorDeam: hsl(0, 0%, 84%);
     --greyText: rgb(190, 190, 190);
     --inputColor: rgb(239, 239, 239);
     --bodyColor: rgb(204, 204, 204);
@@ -147,7 +147,7 @@
 
                     .price {
                         font-size: 2rem;
-                        color: var(--blackColor);
+                        color: var(--SecondaryColor);
                     }
                 }
 
@@ -182,7 +182,7 @@
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (min-width: 500px){
     .title {
         font-size: 1.5rem;
         &::after {
@@ -198,6 +198,7 @@
         }
     }
 }
+
 
 @media screen and (min-width: 840px) {
     .secContent {

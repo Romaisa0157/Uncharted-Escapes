@@ -17,20 +17,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: transparent !important;
   width: 100%;
   padding: 2rem;
   z-index: 1000;
-  margin-top: -10px;
+  margin-top: 10px;
+  text-decoration: none;
 }
-.header .navLists .navItem {
-  color: var(--textColor);
-  padding: 10px;
+.header .navLists .navItem .navLink {
+  color: var(--blackColor);
+  padding: 15px;
   font-size: 0.9rem;
   font-weight: 500;
 }
-.header .navLists .navItem:hover {
-  color: var(--PrimaryColor);
+.header .navLists .navItem .navLink:hover {
+  color: var(--SecondaryColor);
 }
 .header .logo {
   color: var(--blackColor);
@@ -39,10 +40,16 @@
   align-items: center;
   justify-content: center;
 }
+.header .logo:hover {
+  color: var(--SecondaryColor);
+}
 .header .icon {
   font-size: 25px;
-  color: var(--PrimaryColor);
+  color: var(--blackColor);
   transform: translate(5px);
+}
+.header .icon:hover {
+  color: var(--SecondaryColor);
 }
 @media screen and (max-width: 760px) {
   .header .navBar {
@@ -76,14 +83,23 @@
     font-weight: 400;
   }
   .header .navBar .navLists .navItem .navLink:hover {
-    color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
   }
   .header .navBar .navLists .btn {
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--PrimaryColor);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
   .header .navBar .navLists .btn a {
     font-weight: 600;
     color: var(--whiteColor);
+    text-decoration: none;
+  }
+  .header .navBar .navLists .btn:hover {
+    background-color: var(--SecondaryColor);
   }
   .header .navBar .closeNavbar {
     position: absolute;
@@ -102,11 +118,11 @@
   font-size: 25px;
   color: var(--PrimaryColor);
 }
-.header .toggleNavbar:hover.icon {
+.header .toggleNavbar:hover {
   color: var(--SecondaryColor);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 840px) {
   .toggleNavbar,
   .closeNavbar {
     display: none;
@@ -126,15 +142,21 @@
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .navBar .navItem .navLists:hover {
-    color: var(--PrimaryColor);
-  }
   .navBar .btn {
     margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--PrimaryColor);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
   .navBar .btn a {
     color: var(--whiteColor);
     font-weight: 500;
+    text-decoration: none;
+  }
+  .navBar .btn:hover {
+    background-color: var(--SecondaryColor);
   }
 }
 @media screen and (min-width: 1240px) {

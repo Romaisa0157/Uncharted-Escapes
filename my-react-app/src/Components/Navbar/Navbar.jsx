@@ -19,7 +19,7 @@ const Navbar = () => {
       <header className='header flex'>
         <div className='logoDiv'>
           < a href="#" className = "logo flex">
-            <h1> <MdTravelExplore className="icon"/> Travel.</h1>
+            <h1> Uncharted Escape</h1>
           </a>
         </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
               <a href="#" className="navLink"> Home</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink"> Packaged</a>
+              <a href="#" className="navLink"> Packages</a>
             </li>
             <li className="navItem">
               <a href="#" className="navLink"> Shop</a>
