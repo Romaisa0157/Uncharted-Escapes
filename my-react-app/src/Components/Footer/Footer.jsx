@@ -5,6 +5,7 @@ import { FiSend } from 'react-icons/fi'
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillInstagram, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -41,7 +42,7 @@ const Footer = () => {
               Travel with us and explore the world in a unique way. We offer personalized travel
             </div>
 
-            <div className='footerSocials'>
+            <div className='footerSocials flex'>
               <AiOutlineTwitter className='icon' />
               <AiFillYoutube className='icon' />
               <AiFillInstagram className='icon' />
@@ -50,6 +51,101 @@ const Footer = () => {
 
             </div>
           </div>
+          <div className='footerLinks flex'>
+            {/*Group One*/}
+
+            <div className='linkGroup'>
+              <span className='groupTitle'>
+                OUR AGENCY
+              </span>
+
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Services
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Insurance
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Agency
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Tourism
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Payment
+              </li>
+
+            </div>
+
+                        {/*Group Two*/}
+
+              <div className='linkGroup'>
+              <span className='groupTitle'>
+                PARTNERS
+              </span>
+
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Bookings
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                RentCars
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Hotels
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Trivago
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                TripAdvisor
+              </li>
+
+            </div>
+                        {/*Group Three*/}
+
+                        <div className='linkGroup'>
+              <span className='groupTitle'>
+                LAST MINUTE
+              </span>
+
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                London
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                California
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Indonesia
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Europe
+              </li>
+              <li className='footerList flex'>
+                <FaChevronRight className='icon' />
+                Oceania
+              </li>
+
+            </div>
+          </div>
+
+          <div className='footerDiv flex'>
+            <small>TRAVEL WEBSITE</small>
+            <small>COPYRIGHTS RESERVED - ROMAISA</small>
+          </div>
         </div>
       </div>
     </section >
@@ -57,4 +153,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer  

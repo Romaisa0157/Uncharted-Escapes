@@ -55,19 +55,20 @@
   transition: 0.3 ease;
 }
 .main .secContent .singleDestinations .imageDiv {
-  height: 100px;
+  height: 280px;
   width: 100%;
   overflow: hidden;
 }
-.main .secContent .singleDestinations .imageDiv .img {
+.main .secContent .singleDestinations .imageDiv img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 2s ease;
+  transition: 3s ease-in;
 }
 .main .secContent .singleDestinations .imageDiv:hover img {
   transform: scale(1.1);
+  transition: 1s ease-in;
 }
 .main .secContent .singleDestinations .cardInfo {
   padding: 1rem;
