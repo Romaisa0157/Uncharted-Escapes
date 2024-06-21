@@ -50,7 +50,7 @@
 
             height: 100%;
             display: grid;
-            row-gap: 10px;
+            row-gap: 3px;
 
             // padding: 1rem;
             border-radius: 10px;
@@ -70,7 +70,7 @@
             }
 
             .imageDiv {
-                height: 280px;
+                height: 200px;
                 width: 100%;
                 overflow: hidden;
 
@@ -165,19 +165,46 @@
                     border-radius: .5rem;
                     background-color: var(--btnColor);
                     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                  
+
                     justify-content: space-between;
                     gap: .5rem;
-                  }
-                  
-                  .btn-icon {
+                }
+
+                .btn-icon {
                     font-size: 18px;
-                  }
-                  
-                  .btn:hover {
+                }
+
+                .btn:hover {
                     background-color: var(--bodyColor);
-                  }
+                }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title {
+        font-size: 1.5rem;
+        &::after {
+            width: 155px !important;
+        }
+    }
+
+    .secContent {
+        grid-template-columns: repeat(2,1fr);
+
+        .singleDestinations {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .secContent {
+        grid-template-columns: repeat(3,1fr);
+
+        .singleDestinations {
+            height: auto;
         }
     }
 }

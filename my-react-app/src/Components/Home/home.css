@@ -1,15 +1,16 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(387, 85%, 43%);
-  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%)); /* second color unclear */
-  --whiteColor: hsl(0,0%,100%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  /* second color unclear */
+  --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(227, 50%, 58%);
   --textColor: hsl(0, 0%, 0%);
-  --whiteColorDeam: hsl(0,0%,93%);
-  --greyText: rgb(190,190,190);
-  --inputColor: rgb(239,239,239);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(61, 61, 61);
-  --cardBG: rgb(255,255,255);
+  --cardBG: rgb(255, 255, 255);
 }
 
 .home {
@@ -153,4 +154,33 @@
 }
 .home .homeFooterIcons .icon:hover {
   color: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 940px) {
+  .home {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 90vh;
+  }
+  .home .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions span {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=home.css.map */

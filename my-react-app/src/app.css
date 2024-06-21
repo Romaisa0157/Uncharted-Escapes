@@ -21,7 +21,9 @@
     --bodyColor: rgb(240,240,246);
     --cardBG: rgb(255,255,255);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -36,7 +38,7 @@ li{
 
 .container{
     padding-left: 1.5rem;
-    padding-right: 1,5rem;
+    padding-right: 1.5rem;
 }
 
 .icon{
@@ -86,3 +88,20 @@ body{
     background: var(--bodyColor);
 }
 
+@media screen and (min-width: 1248px) {
+    .container {
+      width: 80% !important;
+      margin: auto !important;
+    }
+  
+    .section {
+      padding: 6rem 8rem;
+    }
+  }
+  
+  @media screen and (min-width: 2560px) {
+
+  body {
+    zoom: 1.7;
+  }
+}

@@ -6,11 +6,12 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaTripadvisor } from "react-icons/fa";
 import { CiCircleList } from "react-icons/ci";
 import { TbApps } from "react-icons/tb";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 import './home.css'
 import video from '../../Assets/Video.mp4'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
 
